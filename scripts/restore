@@ -51,9 +51,7 @@ test ! -d $final_path \
 ynh_print_info "Reinstalling dependencies..."
 
 # Define and install dependencies
-ynh_install_app_dependencies build-essential libssl-dev zlib1g-dev libpng-dev libpq-dev memcached postgresql cpanminus
-# Install Carton
-echo yes | cpanm Carton
+ynh_install_app_dependencies build-essential libssl-dev zlib1g-dev libpng-dev libpq-dev memcached postgresql carton
 
 #=================================================
 # RESTORE THE NGINX CONFIGURATION

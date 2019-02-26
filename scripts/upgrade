@@ -102,7 +102,7 @@ ynh_abort_if_errors
 #=================================================
 ynh_print_info "Upgrading source files..."
 
-ynh_install_app_dependencies build-essential libssl-dev zlib1g-dev libpng-dev libpq-dev memcached postgresql cpanminus
+ynh_install_app_dependencies build-essential libssl-dev zlib1g-dev libpng-dev libpq-dev memcached postgresql carton
 
 ynh_setup_source "$final_path"
 
